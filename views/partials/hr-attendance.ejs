@@ -1,0 +1,58 @@
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Calender</h1>
+    <div class="row">
+      <div class="col-xl-8">
+        <div class="card mb-4">
+          <div class="card-header">
+            <i class="fas fa-chart-area me-1"></i>
+            Attendance
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th> date</th>
+                <th>sign in Time</th>
+                <th>sign out Time</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% attendances.forEach((attendance)=>{%>
+              <tr>
+                <td><%=attendance.date%></td>
+                <td><%=attendance.loginTime%></td>
+                <td><%=attendance.logoutTime%></td>
+              </tr>
+              <% });%>
+            </tbody>
+          </table>
+        </div>
+        <form action="/hr/attendance/<%= (page-1) %>">
+          <button>
+            prev
+          </button>
+        </form>
+        <form action="hr/attendance/<%= (page+1) %>">
+          <button>
+            next
+          </button>
+        </form>
+      </div>
+      <div class="col-xl-4">
+        <div class="card mb-4">
+          <div class="card-header">
+            <i class="fas fa-chart-area me-1"></i>
+            Regularize
+          </div>
+          <br>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <h5>Email: hr@qodehr.com</h3>
+                  <h5>Phone: +91 - 00000000</h3>
+              </div>
+            </div>
+          </div>
+          <br>
+        </div>
+      </div>
+    </div>

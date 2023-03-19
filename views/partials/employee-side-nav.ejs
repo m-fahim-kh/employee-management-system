@@ -1,0 +1,31 @@
+<nav class="sb-sidenav accordion sb-sidenav-light" id="sidenavAccordion">
+    <div class="sb-sidenav-menu">
+      <div class="nav">
+        <div class="sb-sidenav-menu-heading">QodeHR</div>
+        <a class="nav-link">
+          <div class="sb-nav-link-icon"><i class="fas fa-address-book"></i></div>
+          <form action="/employee">
+            <button style="border: azure;" type="submit">Dashboard</button>
+          </form>
+        </a>
+        <div class="sb-sidenav-menu-heading">Details</div>
+
+        <a class="nav-link">
+          <div class="sb-nav-link-icon"><i class="fas fa-address-book"></i></div>
+          <form action="/employee/attendance/1">
+            <button style="border: azure;" type="submit">Attendance</button>
+          </form>
+        </a>
+        <a class="nav-link">
+          <div class="sb-nav-link-icon"><i class="fas fa-address-book"></i></div>
+          <form action="/employee/contact">
+            <button style="border: azure;" type="submit">Contact us</button>
+          </form>
+        </a>
+      </div>
+    </div>
+    <div class="sb-sidenav-footer">
+      <div class="small">Logged in as:</div>
+      <%=firstName%>
+    </div>
+  </nav>

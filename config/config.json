@@ -1,0 +1,20 @@
+{
+  "development": {
+    "username": "postgres",
+    "database": "database_development2",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "postgres",
+    "database": "database_test2",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "postgres",
+    "database": "database_production1",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}

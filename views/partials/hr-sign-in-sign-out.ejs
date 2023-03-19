@@ -1,0 +1,8 @@
+<div class="form-signin"> 
+    <form class="sign-in" action="/hr/signin" style="display:<%= (signIn === 'not signed in' && signOut === 'not signed out') ? 'block' : 'none' %>;">
+      <button type="submit">sign-in</button>
+    </form> 
+    <form class="sign-out" action="/hr/signout" style="display:<%= (signIn !== 'not signed in' && signOut === 'not signed out') ? 'block' : 'none' %>;">
+      <button type="submit">sign-out</button>
+    </form>            
+  </div>
